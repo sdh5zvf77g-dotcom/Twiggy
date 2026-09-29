@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Twiggy AI</title>
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <div class="logo">Twiggy</div>
+      <div class="status" id="status">English only • Can grow</div>
+    </header>
+
+    <main id="chat" class="chat">
+      <!-- Messages will appear here -->
+    </main>
+
+    <div class="input-area">
+      <input 
+        type="text" 
+        id="userInput" 
+        placeholder="Message Twiggy..." 
+        autocomplete="off"
+        enterkeyhint="send"
+      />
+      <button id="sendBtn" onclick="sendMessage()">Send</button>
+    </div>
+
+    <div class="toolbar">
+      <button onclick="clearChat()">Clear</button>
+      <button onclick="showKnowledge()">Knowledge</button>
+      <button onclick="toggleVoice()">Voice</button>
+    </div>
+  </div>
+
+  <!-- Knowledge Modal -->
+  <div id="knowledgeModal" class="modal hidden">
+    <div class="modal-content">
+      <h2>Teach Twiggy</h2>
+      <p>Add a new fact or interaction. It will be saved on this device.</p>
+      
+      <label>Type</label>
+      <select id="knowType">
+        <option value="fact">Fact</option>
+        <option value="interaction">Human Interaction</option>
+      </select>
+
+      <div id="factFields">
+        <label>Fact</label>
+        <input type="text" id="newFact" placeholder="Something Twiggy should know..." />
+      </div>
+
+      <div id="interactionFields" class="hidden">
+        <label>User says</label>
+        <input type="text" id="userExample" placeholder="How are you?" />
+        <label>Twiggy replies</label>
+        <input type="text" id="twiggyExample" placeholder="Running fine. What do you need?" />
+      </div>
+
+      <div class="modal-buttons">
+        <button onclick="addKnowledge()">Add</button>
+        <button onclick="closeKnowledge()" class="secondary">Close</button>
+      </div>
+
+      <div id="knowledgeList" class="knowledge-list"></div>
+    </div>
+  </div>
+
+  <script src="knowledge.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
