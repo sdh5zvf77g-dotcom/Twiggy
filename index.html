@@ -12,32 +12,23 @@
   <div class="app">
     <header>
       <div class="logo">Twiggy</div>
-      <div class="status" id="status">English only • Can grow</div>
+      <div class="status" id="status">English only • Can grow • Changeable voice</div>
     </header>
 
-    <main id="chat" class="chat">
-      <!-- Messages will appear here -->
-    </main>
+    <main id="chat" class="chat"></main>
 
     <div class="input-area">
-      <input 
-        type="text" 
-        id="userInput" 
-        placeholder="Message Twiggy..." 
-        autocomplete="off"
-        enterkeyhint="send"
-      />
-      <button id="sendBtn" onclick="sendMessage()">Send</button>
+      <input type="text" id="userInput" placeholder="Message Twiggy..." autocomplete="off" enterkeyhint="send" />
+      <button id="sendBtn">Send</button>
     </div>
 
     <div class="toolbar">
-      <button onclick="clearChat()">Clear</button>
-      <button onclick="showKnowledge()">Knowledge</button>
-      <button onclick="toggleVoice()">Voice</button>
+      <button id="clearBtn">Clear</button>
+      <button id="knowBtn">Knowledge</button>
+      <button id="voiceBtn">Voice</button>
     </div>
   </div>
 
-  <!-- Knowledge Modal -->
   <div id="knowledgeModal" class="modal hidden">
     <div class="modal-content">
       <h2>Teach Twiggy</h2>
@@ -62,8 +53,8 @@
       </div>
 
       <div class="modal-buttons">
-        <button onclick="addKnowledge()">Add</button>
-        <button onclick="closeKnowledge()" class="secondary">Close</button>
+        <button id="addKnowBtn">Add</button>
+        <button id="closeKnowBtn" class="secondary">Close</button>
       </div>
 
       <div id="knowledgeList" class="knowledge-list"></div>

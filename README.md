@@ -1,38 +1,22 @@
-# Twiggy AI (Web Version)
+# Twiggy AI – MAX Version
 
-Works on **iPhone**, Android, and computer browsers.
+Biggest knowledge pack + voice selection.
 
 ### Features
 - English only
-- Remembers conversations (saved on your phone)
-- Can grow — teach it new facts and replies
-- Optional voice (uses your phone’s voice)
-- No installation needed
+- Large built-in knowledge (100+ facts, 100+ interactions)
+- Remembers conversations on your device
+- You can teach it more (Knowledge button)
+- **Changeable voice** – say “change voice” or “voice 2”
+- Works on iPhone Safari
 
-## How to use on iPhone
+### Voice commands
+- `voice on` / `voice off`
+- `change voice` – lists available English voices
+- `voice 1`, `voice 2`, etc. – select a voice
 
-### Method 1 – GitHub Pages (Recommended)
-1. Upload all files in this folder to a GitHub repository
-2. Go to **Settings → Pages**
-3. Set Source to **main** branch and folder **/ (root)**
-4. Wait 1 minute, then open the link GitHub gives you
-5. Tap the **Share button** in Safari → **Add to Home Screen**
-
-Now Twiggy works like an app on your iPhone.
-
-### Method 2 – Just open the file
-You can also open `index.html` directly, but GitHub Pages is better.
-
-## How Twiggy grows
-1. Tap the **Knowledge** button
-2. Add a new fact or a human interaction example
-3. It is saved on your iPhone automatically
-
-Twiggy will use the new knowledge in future conversations.
-
-## Files
-- `index.html` – main page
-- `style.css` – design
-- `app.js` – brain
-- `knowledge.js` – starting knowledge
-- `README.md` – this file
+### How to use on GitHub Pages
+1. Upload all files to your repo
+2. Settings → Pages → Deploy from branch → main → / (root)
+3. Open the link GitHub gives you
+4. Add to Home Screen for app-like use
